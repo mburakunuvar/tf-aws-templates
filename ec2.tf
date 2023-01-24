@@ -19,6 +19,15 @@ resource "aws_instance" "web_server" {
   instance_type = "t3.micro"
   subnet_id     = aws_subnet.public_subnets["public_subnet_1"].id
   tags = {
-    Name = "Ubuntu EC2 Server"
+    Name = "Terraform Ubuntu EC2 Server"
+  }
+}
+
+resource "aws_instance" "web" {
+  ami           = "ami-0ceecbb0f30a902a6"
+  instance_type = "t3.micro"
+  subnet_id     = "subnet-0e7c67e16a6698372"
+  tags = {
+    Name = "Terraform Amazon Linux EC2"
   }
 }
