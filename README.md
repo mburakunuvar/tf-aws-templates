@@ -43,3 +43,9 @@ $ terraform apply -auto-approve ec2-instance
 $ terraform show
 
 ```
+
+## [Local Values](https://developer.hashicorp.com/terraform/language/values/locals)
+
+-   Input variables are like function arguments.
+-   Output values are like function return values.
+-   Local values are like a function's temporary local variables.

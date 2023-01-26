@@ -24,3 +24,30 @@ variable "public_subnets" {
     "public_subnet_3" = 2
   }
 }
+
+variable "custom_subnet_cidr" {
+  description = "CIDR Block for Custom Subnet"
+  type        = string
+  default     = "10.0.250.0/24"
+
+}
+
+variable "custom_subnet_az" {
+  description = "AZ for Custom Subnet"
+  type        = string
+  default     = "us-west-2a"
+
+}
+variable "custom_subnet_auto_ip" {
+  description = "Auto IP Assignment for Custom Subnet"
+  type        = bool
+  default     = true
+
+}
+
+variable "environment" {
+  description = "AZ for Custom Subnet"
+  type        = string
+  default     = "dev"
+
+}
